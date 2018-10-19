@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e3e3e3;
+	padding:120px 250px 0 250px;
+	font-family: "Open Sans";
+}
+
+.box {
+	background-color: #222831;
+	display: flex;
+	flex-direction: column;
+	padding: 35px 100px 35px 100px;
+	box-shadow: 0 4px 8px 0 #3e4149;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+
+.logo {
+	color: #fff;
+	font-weight: 900;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.menu ul{
+	display: flex;
+}
+
+.menu li {
+	margin-right: 35px;
+	list-style-type: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	/*font-weight: 600;*/
+}
+
+.menu .active {
+	color: #ff5722;
+}
+.menu li a:hover {
+	color: #ff5722;
+}
+
+.contact {
+	background-color: #ff5722;
+	padding: 5px 10px 5px 10px;
+	-webkit-border-radius: 30px;
+	-o-border-radius:30px;
+	-moz-border-radius:30px;
+}
+
+.contact a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	/*clear: right;*/
+}
+
+.contact:hover {
+	background-color: #f07b3f;
+}
+
+.main {
+	display: flex;
+}
+.text {
+	flex-grow: 1;
+}
+.text p {
+	font-size: 35px;
+	font-weight: 140px;
+	color: #fff;
+	margin-bottom: -20px;
+}
+
+.text h1 {
+	font-size: 40px;
+	color: #fff;
+	font-weight: 800;
+}
+
+.text h1 .dev {
+	color: #ff5722;
+}
+.img {
+	background-image: url("img.jpeg");
+	height: 199px;
+	width: 199px;
+	background-size: cover;
+	background-position: center;
+}
+.circle .img{
+	border: 10px solid #ff5722;
+	-webkit-border-radius: 100px;
+	-moz-border-radius:100px;
+	-o-border-radius:100px;
+}
+
+.foot {
+	display: flex;
+	flex-direction: column;
+}
+
+.foll {
+	color: #52616b;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+.media {
+	display: flex;
+}
+
+.circle-media {
+	margin-right: 17px;
+}
+
+.facebook {
+	background-image: url("facebook.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+.ig {
+	background-image: url("ig.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+.github {
+	background-image: url("github.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+a .facebook:hover {
+	background-image: url("facebook-hover.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+a .ig:hover {
+	background-image: url("ig-hover.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+a .github:hover {
+	background-image: url("github-hover.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+/*----------- RESPONSIVE -------------*/
+@media screen and (max-width: 1160px) {
+	body {
+		padding: 12px 0 0 0;
+	}
+
+	.box {
+		width: 100%;
+	}
+	.header {
+		flex-direction: column;
+	}
+
+	.header .logo {
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+	
+	.menu {
+		display: none;
+	}
+	
+
+	.header .contact {
+		margin: 0 auto;
+	}
+
+	.main {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+
+	.main .text {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.text p {
+		font-size: 24px;
+	}
+
+	.text h1 {
+		font-size: 30px;
+	}
+
+	.foot {
+		align-items: center;
+		margin-top: 29px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
